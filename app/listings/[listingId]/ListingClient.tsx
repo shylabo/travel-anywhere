@@ -6,7 +6,7 @@ import axios from 'axios'
 import { toast } from 'react-hot-toast'
 import { differenceInCalendarDays, eachDayOfInterval } from 'date-fns'
 
-import { SafeListing, SafeUser, safeReservation } from '../../types'
+import { SafeListing, SafeUser, SafeReservation } from '../../types'
 import { categories } from '../../components/navbar/Categories'
 import Container from '../../components/Container'
 import ListingHead from '../../components/listings/ListingHead'
@@ -23,7 +23,7 @@ const initialDateRange = {
 }
 
 interface ListingClientProps {
-  reservations?: safeReservation[]
+  reservations?: SafeReservation[]
   listing: SafeListing & {
     user: SafeUser
   }
