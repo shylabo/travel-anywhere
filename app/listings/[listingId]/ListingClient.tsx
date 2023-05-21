@@ -4,10 +4,9 @@ import { useMemo, useState, useCallback, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
-import { Reservation } from '@prisma/client'
 import { differenceInCalendarDays, eachDayOfInterval } from 'date-fns'
 
-import { SafeListing, SafeUser } from '../../types'
+import { SafeListing, SafeUser, safeReservation } from '../../types'
 import { categories } from '../../components/navbar/Categories'
 import Container from '../../components/Container'
 import ListingHead from '../../components/listings/ListingHead'
@@ -24,14 +23,14 @@ const initialDateRange = {
 }
 
 interface ListingClientProps {
-  reservation?: Reservation[]
+  reservations?: safeReservation[]
   listing: SafeListing & {
     user: SafeUser
   }
   currentUser?: SafeUser | null
 }
 const ListingClient: React.FC<ListingClientProps> = ({
-  reservation = [],
+  reservations = [],
   listing,
   currentUser,
 }) => {
@@ -41,7 +40,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
   const disableDates = useMemo(() => {
     let dates: Date[] = []
 
-    reservation.forEach((reservation) => {
+    reservations.forEach((reservation) => {
       const range = eachDayOfInterval({
         start: new Date(reservation.startDate),
         end: new Date(reservation.endDate),
@@ -51,7 +50,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
     })
 
     return dates
-  }, [reservation])
+  }, [reservations])
 
   const [isLoading, setIsLoading] = useState(false)
   const [totalPrice, setTotalPrice] = useState(listing.price)
