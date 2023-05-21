@@ -1,8 +1,7 @@
 'use client'
 
-import { Reservation } from '@prisma/client'
 import { useCallback, useMemo } from 'react'
-import { SafeListing, SafeUser } from '../../types'
+import { SafeListing, SafeUser, safeReservation } from '../../types'
 import { useRouter } from 'next/navigation'
 import useCountries from '../../hooks/useCountries'
 import { format } from 'date-fns'
@@ -12,7 +11,7 @@ import Button from '../Button'
 
 interface ListingCardProps {
   data: SafeListing
-  reservation?: Reservation
+  reservation?: safeReservation
   onAction?: (id: string) => void
   disabled?: boolean
   actionLabel?: string
