@@ -1,13 +1,15 @@
 'use client'
 
-import { useCallback, useMemo } from 'react'
-import { SafeListing, SafeUser, SafeReservation } from '../../types'
-import { useRouter } from 'next/navigation'
-import useCountries from '../../hooks/useCountries'
-import { format } from 'date-fns'
 import Image from 'next/image'
-import HeartButton from '../HeartButton'
-import Button from '../Button'
+import { useRouter } from 'next/navigation'
+import { useCallback, useMemo } from 'react'
+import { format } from 'date-fns'
+
+import { SafeListing, SafeUser, SafeReservation } from '@/app/types'
+
+import HeartButton from '@/app/components/HeartButton'
+import Button from '@/app/components/Button'
+import useCountries from '@/app/hooks/useCountries'
 
 interface ListingCardProps {
   data: SafeListing

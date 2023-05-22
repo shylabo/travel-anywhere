@@ -1,20 +1,20 @@
 'use client'
 
-import { formatISO } from 'date-fns'
-import qs from 'query-string'
 import { useRouter, useSearchParams } from 'next/navigation'
+import dynamic from 'next/dynamic'
 import { useCallback, useMemo, useState } from 'react'
 import { Range } from 'react-date-range'
-import dynamic from 'next/dynamic'
+import { formatISO } from 'date-fns'
+import qs from 'query-string'
+
+import { CountrySelectValue } from '@/app/components/inputs/CountrySelect'
+import CountrySelect from '@/app/components/inputs/CountrySelect'
+import Calendar from '@/app/components/inputs/Calendar'
+import Counter from '@/app/components/inputs/Counter'
+import Heading from '@/app/components/Heading'
+import useSearchModal from '@/app/hooks/useSearchModal'
 
 import Modal from './Modal'
-import { CountrySelectValue } from '../inputs/CountrySelect'
-import Heading from '../Heading'
-import CountrySelect from '../inputs/CountrySelect'
-import Calendar from '../inputs/Calendar'
-import Counter from '../inputs/Counter'
-
-import useSearchModal from '../../hooks/useSearchModal'
 
 enum STEPS {
   LOCATION = 0,

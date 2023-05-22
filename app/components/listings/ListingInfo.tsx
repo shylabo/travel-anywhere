@@ -3,9 +3,11 @@
 import { IconType } from 'react-icons'
 import dynamic from 'next/dynamic'
 
-import { SafeUser } from '../../types'
-import useCountries from '../../hooks/useCountries'
-import Avatar from '../Avatar'
+import { SafeUser } from '@/app/types'
+
+import useCountries from '@/app/hooks/useCountries'
+import Avatar from '@/app/components/Avatar'
+
 import ListingCategory from './ListingCategory'
 
 const Map = dynamic(() => import('../Map'), {
