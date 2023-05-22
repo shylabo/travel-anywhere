@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Travel Anywhere
 
-## Getting Started
+## 🏖 What is Travel Anywhere?
 
-First, run the development server:
+<hr>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This travel booking app offers an extensive range of destinations worldwide, allowing you to book numerous places across the globe.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It provides convenient features such as third-party login integration, efficient search functionality, seamless reservation processes, and comprehensive property management capabilities.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Additionally, the app boasts a modern and fully responsive design, making it visually appealing and user-friendly for an optimal booking experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Link to project:** https://travel-anywhere.vercel.app
 
-## Learn More
+## 💻 Tech used
 
-To learn more about Next.js, take a look at the following resources:
+<hr>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- React
+- TypeScript
+- TailwindCSS
+- Prisma
+- MongoDB
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📱 Main Features
 
-## Deploy on Vercel
+<hr>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Multi way of authentication
+- Multi Step Search
+- Hosting properties
+- Reservation trip (Dynamic change of price and dates)
+- Management for reservations and properties
+- Favorite listing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ☁︎ Hosting
+
+<hr>
+
+- Application: Vercel
+- DB: MongoDB
+- Image: Cloudinary
