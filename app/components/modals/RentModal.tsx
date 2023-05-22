@@ -67,7 +67,7 @@ const RentModal = () => {
       dynamic(() => import('../Map'), {
         ssr: false,
       }),
-    [location]
+    []
   )
 
   const setCustomValue = (id: string, value: any) => {
@@ -253,7 +253,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Airbnb your home!"
+      title="List your home!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
