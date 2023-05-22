@@ -3,6 +3,7 @@ import getListings, { IListingsParams } from './actions/getListings'
 import ListingCard from './components/listings/ListingCard'
 import Container from './components/Container'
 import EmptyState from './components/EmptyState'
+import ClientOnly from './components/ClientOnly'
 
 interface HomeProps {
   searchParams: IListingsParams
@@ -15,12 +16,17 @@ const Home = async ({ searchParams }: HomeProps) => {
   const currentUser = await getCurrentUser()
 
   if (listings.length === 0) {
-    return <EmptyState showReset />
+    return (
+      <ClientOnly>
+        <EmptyState showReset />
+      </ClientOnly>
+    )
   }
   return (
-    <Container>
-      <div
-        className="
+    <ClientOnly>
+      <Container>
+        <div
+          className="
           pt-24
           grid
           grid-cols-1
@@ -31,12 +37,13 @@ const Home = async ({ searchParams }: HomeProps) => {
           2xl:grid-cols-6
           gap-8
         "
-      >
-        {listings.map((listing) => {
-          return <ListingCard currentUser={currentUser} key={listing.id} data={listing} />
-        })}
-      </div>
-    </Container>
+        >
+          {listings.map((listing) => {
+            return <ListingCard currentUser={currentUser} key={listing.id} data={listing} />
+          })}
+        </div>
+      </Container>
+    </ClientOnly>
   )
 }
 
