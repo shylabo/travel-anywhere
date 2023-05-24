@@ -3,7 +3,7 @@ import React from 'react'
 
 import { SafeUser } from '@/app/types'
 
-import Container from '@/app/components/Container'
+import Container from '@/components/Container'
 
 import Logo from './Logo'
 import Search from './Search'

@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 import { SafeUser } from '@/app/types'
 
-import useCountries from '@/app/hooks/useCountries'
-import HeartButton from '@/app/components/HeartButton'
-import Heading from '@/app/components/Heading'
+import useCountries from '@/hooks/useCountries'
+import HeartButton from '@/components/HeartButton'
+import Heading from '@/components/Heading'
 
 interface ListingHeadProps {
   title: string

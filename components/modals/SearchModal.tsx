@@ -7,12 +7,12 @@ import { Range } from 'react-date-range'
 import { formatISO } from 'date-fns'
 import qs from 'query-string'
 
-import { CountrySelectValue } from '@/app/components/inputs/CountrySelect'
-import CountrySelect from '@/app/components/inputs/CountrySelect'
-import Calendar from '@/app/components/inputs/Calendar'
-import Counter from '@/app/components/inputs/Counter'
-import Heading from '@/app/components/Heading'
-import useSearchModal from '@/app/hooks/useSearchModal'
+import { CountrySelectValue } from '@/components/inputs/CountrySelect'
+import CountrySelect from '@/components/inputs/CountrySelect'
+import Calendar from '@/components/inputs/Calendar'
+import Counter from '@/components/inputs/Counter'
+import Heading from '@/components/Heading'
+import useSearchModal from '@/hooks/useSearchModal'
 
 import Modal from './Modal'
 

@@ -7,9 +7,9 @@ import axios from 'axios'
 
 import { SafeReservation, SafeUser } from '@/app/types'
 
-import ListingCard from '@/app/components/listings/ListingCard'
-import Heading from '@/app/components/Heading'
-import Container from '@/app/components/Container'
+import ListingCard from '@/components/listings/ListingCard'
+import Heading from '@/components/Heading'
+import Container from '@/components/Container'
 
 interface ReservationsClientProps {
   reservations: SafeReservation[]

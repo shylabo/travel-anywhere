@@ -7,9 +7,9 @@ import { format } from 'date-fns'
 
 import { SafeListing, SafeUser, SafeReservation } from '@/app/types'
 
-import HeartButton from '@/app/components/HeartButton'
-import Button from '@/app/components/Button'
-import useCountries from '@/app/hooks/useCountries'
+import HeartButton from '@/components/HeartButton'
+import Button from '@/components/Button'
+import useCountries from '@/hooks/useCountries'
 
 interface ListingCardProps {
   data: SafeListing

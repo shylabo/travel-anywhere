@@ -6,10 +6,10 @@ import { AiOutlineMenu } from 'react-icons/ai'
 
 import { SafeUser } from '@/app/types'
 
-import Avatar from '@/app/components/Avatar'
-import useRegisterModal from '@/app/hooks/useRegisterModal'
-import useLoginModal from '@/app/hooks/useLoginModal'
-import useRentModal from '@/app/hooks/useRentModal'
+import Avatar from '@/components/Avatar'
+import useRegisterModal from '@/hooks/useRegisterModal'
+import useLoginModal from '@/hooks/useLoginModal'
+import useRentModal from '@/hooks/useRentModal'
 
 import MenuItem from './MenuItem'
 

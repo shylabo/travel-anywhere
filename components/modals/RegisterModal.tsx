@@ -7,12 +7,12 @@ import { FcGoogle } from 'react-icons/fc'
 import { toast } from 'react-hot-toast'
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
 
-import Input from '@/app/components/inputs/Input'
-import Heading from '@/app/components/Heading'
-import Button from '@/app/components/Button'
+import Input from '@/components/inputs/Input'
+import Heading from '@/components/Heading'
+import Button from '@/components/Button'
 
-import useRegisterModal from '@/app/hooks/useRegisterModal'
-import useLoginModal from '@/app/hooks/useLoginModal'
+import useRegisterModal from '@/hooks/useRegisterModal'
+import useLoginModal from '@/hooks/useLoginModal'
 
 import Modal from './Modal'
 

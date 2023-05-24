@@ -17,7 +17,7 @@ import { IoDiamond } from 'react-icons/io5'
 import { BsSnow } from 'react-icons/bs'
 import { MdOutlineVilla } from 'react-icons/md'
 
-import Container from '@/app/components/Container'
+import Container from '@/components/Container'
 
 import CategoryBox from './CategoryBox'
 

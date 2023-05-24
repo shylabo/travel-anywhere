@@ -5,8 +5,8 @@ import dynamic from 'next/dynamic'
 
 import { SafeUser } from '@/app/types'
 
-import useCountries from '@/app/hooks/useCountries'
-import Avatar from '@/app/components/Avatar'
+import useCountries from '@/hooks/useCountries'
+import Avatar from '@/components/Avatar'
 
 import ListingCategory from './ListingCategory'
 
