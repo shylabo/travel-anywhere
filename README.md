@@ -1,9 +1,8 @@
 # Travel Anywhere
+
 ![travel-anywhere](https://github.com/shylabo/travel-anywhere/assets/41677855/5566e522-d981-4df0-895b-d23c79841231)
 
 ## 🏖 What is Travel Anywhere?
-
-<hr>
 
 This travel booking app offers an extensive range of destinations worldwide, allowing you to book numerous places across the globe.
 
@@ -15,8 +14,6 @@ Additionally, the app boasts a modern and fully responsive design, making it vis
 
 ## 💻 Tech used
 
-<hr>
-
 - Next.js
 - React
 - TypeScript
@@ -26,8 +23,6 @@ Additionally, the app boasts a modern and fully responsive design, making it vis
 
 ## 📱 Main Features
 
-<hr>
-
 - Multi way of authentication
 - Multi Step Search
 - Hosting properties
@@ -36,8 +31,6 @@ Additionally, the app boasts a modern and fully responsive design, making it vis
 - Favorite listing
 
 ## ☁︎ Hosting
-
-<hr>
 
 - Application: Vercel
 - DB: MongoDB
