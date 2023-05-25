@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useMemo } from 'react'
 import { format } from 'date-fns'
@@ -68,8 +69,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
   }, [reservation])
 
   return (
-    <div
-      onClick={() => router.push(`/listings/${data.id}`)}
+    <Link
+      href={`/listings/${data.id}`}
+      rel="noopener noreferrer"
+      target="_blank"
       className="col-span-1 cursor-pointer group"
     >
       <div className="flex flex-col gap-2 w-full">
@@ -110,7 +113,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           <Button disabled={disabled} small label={actionLabel} onClick={handleCancel} />
         )}
       </div>
-    </div>
+    </Link>
   )
 }
 
