@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       className={`
         relative
-        disabled:opacity-70
+        disabled:opacity-30
         disabled:cursor-not-allowed
         rounded-lg
         hover:opacity-80
